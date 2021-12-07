@@ -1,0 +1,62 @@
+:root{
+    font-family: 'Inter',sans-serif;
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+body{
+    background: #051D3B;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 44px 32px;
+    /*background-color: tomato;*/
+}
+.cabecalho-logo{
+    width: 145px;
+    height: 34.5px;
+}
+.cabecalho-busca{  
+    width: 52%;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255,0.16); 
+    font-size: 20px;   
+    color: white;
+}
+.cabecalho_user-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    transition: 0.1s;
+}
+.cabecalho_user-info:hover{
+    background: rgba(255, 255, 255,0.16); 
+    border-radius: 8px;
+}
+    .cabecalho_foto-perfil{
+        width: 32px;
+        height: 32px;
+    }
+    .cabecalho-username{
+        color: white;
+        margin-left: 1.2rem;
+    }
+
+/*main*/
+
+.navegacao{
+    color: white;
+    padding: 44px 32px;
+}
+.navegacao_menu{
+    text-transform: uppercase;
+}
+.navegacao_editor-de-codigo::before{
+
+
+}
