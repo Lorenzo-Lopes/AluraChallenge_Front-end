@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -18,6 +19,7 @@
             <img src="img/Header/Perfil.png" alt="foto de perfil do usuario" class="cabecalho_foto-perfil">
             <p class="cabecalho-username">Harry</p>
         </div>
+       
     </header>
 
     <main class="main">
@@ -37,10 +39,18 @@
 
         <section class="editor">
             <form action="" class="codigo_fonte">
-                <label for="codigo_fonte-texto"></label>
-                <textarea name="codigo" class="codigo_fonte-texto" cols="30" rows="10"></textarea>
-                <button></button>
+                    <div class="editor_codigo">
+                            <ul class="topo_editor">
+                                <li class="vermelho navegacao_editor-de-codigo">&#11044</li>
+                                <li class="amarelo navegacao_editor-de-codigo">&#11044</li>
+                                <li class="verde navegacao_editor-de-codigo">&#11044</li>
+                            </ul>
+                            <label for="codigo_fonte-texto"></label>
+                            <textarea name="codigo" class="codigo_fonte-texto" cols="10" rows="10"></textarea>
+                    </div>
+                    
             </form>
+            <button class="visualizar_highlight">Visualizar com o highlight</button>
         </section>
 
         <section class="projeto">
@@ -56,6 +66,7 @@
                 <h2 class="projeto-personalizacao">Personalização</h2>
                 <div class="projeto-info">
                     <label for="selecao_linguagem"></label>
+
                     <select name="selecao_linguagem" class="selecao_linguagem">
                         <option value="JavaScript" class="opcao_linguagem">JavaScript</option>
                         <option value="JavaScript" class="opcao_linguagem">Python</option>
@@ -64,11 +75,16 @@
                     <button class="projeto_cor"></button>
                 </div>
 
-
-                <button type="button">Salvar projeto</button>          
+                <div class="selecao_cor">
+                    <input type="color" name="selecao_cor" class="cor_selecionada">   
+                </div>
+                     
+                
+               
+                <button class="salvar_projeto">Salvar projeto</button>
+               
             </form>
             
-
         </section>
 
 
