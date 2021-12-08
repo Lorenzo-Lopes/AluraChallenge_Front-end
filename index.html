@@ -20,13 +20,64 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <nav class="navegacao">
-            <h2 class="navegacao_menu">Menu</h2>
-            <p class="navegacao_editor-de-codigo">Editor de Codigo</p>
-            <p class="navegacao-comunidade">Comunidade</p>
-
+            <h2 class="navegacao_titulo">Menu</h2>
+            <ul class="navegacao_menu">
+                <a href="#" class="navegacao_item">
+                    <li class="navegacao_icone-codigo"></li>
+                    <li class="navegacao_editor-de-codigo"><p>Editor de Codigo</p></li>
+                </a>
+                <a href="#" class="navegacao_item">
+                    <li class="navegacao_icone-comunidade"></li>
+                    <li class="navegacao-comunidade"><p>Comunidade</p></li>
+                </a>
+            </ul>
         </nav>
+
+        <section class="editor">
+            <form action="" class="codigo_fonte">
+                <label for="codigo_fonte-texto"></label>
+                <textarea name="codigo" class="codigo_fonte-texto" cols="30" rows="10"></textarea>
+                <button></button>
+            </form>
+        </section>
+
+        <section class="projeto">
+            
+            <form action="salvar_projeto" class="projeto-informacoes">    
+                <h2 class="projeto_titulo">Seu projeto</h2>
+                <div class="projeto-info">
+                    <label for="projeto-nome"></label>
+                    <input type="text" class="projeto-nome" name="projeto-nome" placeholder="Nome do seu projeto">
+                    <label for="projeto-descricao"></label>
+                    <input type="text" class="projeto-descricao" placeholder="Descrição do seu projeto">
+                </div>
+                <h2 class="projeto-personalizacao">Personalização</h2>
+                <div class="projeto-info">
+                    <label for="selecao_linguagem"></label>
+                    <select name="selecao_linguagem" class="selecao_linguagem">
+                        <option value="JavaScript" class="opcao_linguagem">JavaScript</option>
+                        <option value="JavaScript" class="opcao_linguagem">Python</option>
+                        <option value="JavaScript" class="opcao_linguagem">Java</option>
+                    </selct>
+                    <button class="projeto_cor"></button>
+                </div>
+
+
+                <button type="button">Salvar projeto</button>          
+            </form>
+            
+
+        </section>
+
+
+
+
+            
+            
+
+        
     </main>
 </body>
 </html>

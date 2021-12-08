@@ -1,6 +1,6 @@
 :root{
-    font-family: 'Inter',sans-serif;
-    font-family: 'icones';
+    font-family: 'Inter','icones',sans-serif;
+    
     src: url(../font/icones.ttf);
 }
 body{
@@ -13,7 +13,7 @@ body{
     width: 100vw;
     box-sizing: border-box;
     padding: 44px 32px;
-    /*background-color: tomato;*/
+    
 }
 .cabecalho-logo{
     width: 145px;
@@ -26,6 +26,7 @@ body{
     background: rgba(255, 255, 255,0.16); 
     font-size: 20px;   
     color: white;
+    padding-left: 1.5rem;
 }
 .cabecalho_user-info{
     display: flex;
@@ -48,15 +49,88 @@ body{
     }
 
 /*main*/
+.main{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
 
 .navegacao{
     color: white;
     padding: 44px 32px;
+    
+}
+.navegacao_titulo , .projeto_titulo, .projeto-personalizacao{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
 }
 .navegacao_menu{
-    text-transform: uppercase;
 }
-.navegacao_editor-de-codigo::before{
+.navegacao_item{
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
 
 
 }
+.navegacao_icone-codigo{
+    background: center no-repeat url(../../img/Menu/icon_codigo.png);
+    
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    width: 48px;
+    height: 48px;
+    background-color: #5081FB;
+}
+
+.navegacao_icone-comunidade{
+    background: center no-repeat url(../../img/Menu/icon_comunidade.png);
+    background-color:#5080fb15;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    width: 48px;
+    height: 48px;
+}
+.editor {
+    background-color: red;
+}
+.projeto{
+    color: white;
+    padding: 44px 32px;
+}
+.projeto-info{
+    padding-bottom: 1.5rem;
+}
+.projeto-nome,.projeto-descricao,.selecao_linguagem{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 272px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.16); 
+    
+    font-size: 20px;   
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+.projeto-descricao{
+    height: 80px;
+}
+
+.selecao_linguagem{
+    color: rgba(255, 255, 255); 
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+.opcao_linguagem{
+    color: white;
+    background:#051D3B ;
+}
+ 
