@@ -20,7 +20,7 @@ body{
     height: 34.5px;
 }
 .cabecalho-busca{  
-    width: 50%;
+    width: 100%;
     height: 56px;
     border-radius: 8px;
     background: rgba(255, 255, 255,0.16); 
@@ -28,6 +28,9 @@ body{
     color: white;
     padding-left: 1.5rem;
    margin-right: 85px;
+}
+.lupa_icon{
+    display: none;
 }
 .cabecalho_user-info{
     box-sizing: border-box;
@@ -57,9 +60,7 @@ body{
     justify-content: space-between;
 }
 
-.navegacao_titulo{
-    
-}
+
 .navegacao{
     display: flex;
     flex-direction: column;
@@ -75,8 +76,7 @@ body{
     text-transform: uppercase;
     letter-spacing: .5rem;
 }
-.navegacao_menu{
-}
+
 .navegacao_item{
     display: flex;
     align-items: center;
@@ -168,7 +168,7 @@ body{
     color: white;
     padding: 44px 32px;
 }
-.projeto-info{
+.projeto-info, .projeto-info_cod_cor{
     padding-bottom: 1.5rem;
 }
 .projeto-nome,.projeto-descricao,.selecao_linguagem{
@@ -212,7 +212,7 @@ body{
     background-color:#051D3B ;
     padding: .3rem;
     border: 1px solid white;
-    
+
 }
 .salvar_projeto{
 
@@ -220,4 +220,74 @@ body{
     width: 298px;
     height:56px;
     border-radius: 10px;
+}
+.cartoes{
+    width: 80%;
+}
+.menu_lateral{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .navegacao, .cabecalho_user-info{
+        display: none!important;
+    }
+    .menu_lateral{
+        display:inline;
+        color:white;
+        font-size: 2rem;
+    }
+    .cabecalho-busca{
+        margin-right: 0;
+    }
+    .cabecalho{
+        box-sizing: border-box;
+    }
+    .main{
+        box-sizing: border-box;
+        display: block;
+        align-items: center;
+    }
+    .editor{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .projeto-descricao, .projeto-nome{
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .salvar_projeto{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .projeto-info_cod_cor{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .cabecalho-busca{
+        width: 90%;
+    }
+}
+@media screen and (max-width:375px){
+    .cabecalho-busca{
+        display: none;
+    }
+    .lupa_icon{
+        
+        display: inline;
+    }
+    .projeto-info_cod_cor{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    } 
+    .salvar_projeto_area{
+        padding-top: 20px;
+    }
+    .editor{
+        margin: 0;
+        width: 100%;
+    }
 }

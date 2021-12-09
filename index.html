@@ -14,11 +14,18 @@
 <body>
     <header class="cabecalho">
         <h1><img src="img/Header/Logo.svg" alt="Logo da AluraDEV" class="cabecalho-logo"></h1>
-        <input type="text"  placeholder="Busque por algo" class="cabecalho-busca">
+        <div class="cabecalho_busca">
+            <input type="text"  placeholder="Busque por algo" class="cabecalho-busca">
+            <img src="img/Header/lupa.svg" alt="Desenho de lupa" class="lupa_icon">
+        </div>
         <div class="cabecalho_user-info">
             <img src="img/Header/Perfil.png" alt="foto de perfil do usuario" class="cabecalho_foto-perfil">
             <p class="cabecalho-username">Harry</p>
         </div>
+        <div class="menu_lateral">
+           <p>☰  </p>
+
+       </div>
        
     </header>
 
@@ -64,7 +71,7 @@
                     <input type="text" class="projeto-descricao" placeholder="Descrição do seu projeto">
                 </div>
                 <h2 class="projeto-personalizacao">Personalização</h2>
-                <div class="projeto-info">
+                <div class="projeto-info_cod_cor">
                     <label for="selecao_linguagem"></label>
 
                     <select name="selecao_linguagem" class="selecao_linguagem">
@@ -80,9 +87,11 @@
                 </div>
                      
                 
-               
-                <button class="salvar_projeto">Salvar projeto</button>
-               
+               <div class="salvar_projeto_area">
+                   
+                    <button class="salvar_projeto">Salvar projeto</button>
+               </div>
+                
             </form>
             
         </section>
